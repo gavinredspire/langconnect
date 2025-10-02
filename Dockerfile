@@ -24,5 +24,5 @@ EXPOSE 8080
 
 # Command to run the application
 #CMD ["uv", "run", "uvicorn", "langconnect.server:APP", "--host", "0.0.0.0", "--port", "8080"]
-CMD ["bash", "-lc", "echo '=== ENV DUMP ==='; printenv | sort; echo '=== sleeping 30s ==='; sleep 30; uvicorn langconnect.server:app --host 0.0.0.0 --port 8080"]
+CMD ["bash", "-lc", "echo '=== ENV DUMP ==='; printenv | sort; echo '=== sleeping 5s ==='; sleep 5; uvicorn langconnect.server:APP --host 0.0.0.0 --port 8080"]
 
